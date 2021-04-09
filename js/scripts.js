@@ -1,8 +1,11 @@
-function Order(size, toppings) {
+function Order(size, toppings, cost, customerName, orderID) {
   this.size = size;
-  this.toppings = toppings;
+  this.toppings = [];
+  this.customerName;
+  this.orderID;
 }
 
+
 Order.prototype.cost = function () {
-  if 
+  let 
 }
