@@ -2,6 +2,8 @@
 <html lang="en-US">
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
@@ -32,7 +34,7 @@
       </label>
     </div>
     <br>
-    <label for="proofreader">Which toppings would you like?</label>
+    <label for="toppings">Which toppings would you like?</label>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="pepperoniCheck1">
       <label class="form-check-label" for="pepperoniCheck1">
@@ -75,10 +77,13 @@
         Red Onion
       </label>
     </div>
-    <br>
-    <br>
-    <button type="submit" class="btn-primary">Order</button>
-  </form>
+    <br><br>
+    <button type="submit" class="btn-primary">Get Total</button>
+    <br><br>
+    <div id="output">
+      <p><span class="username"></span>, your total is <span class="result"></span></p>
+    </div>
+    </form>
 </div>
 </body>
 </html>

@@ -1,3 +1,4 @@
+// Business Logic
 function Order(size, toppings, price) {
   this.size = size;
   this.toppings = toppings;
@@ -5,7 +6,6 @@ function Order(size, toppings, price) {
   // this.customerName;
   // this.orderID;
 }
-
 
 Order.prototype.getPrice = function () {
   const pizzaSize = this.size
@@ -53,3 +53,23 @@ let order5 = new Order("medium", ["pepperoni", "sausage", "artichoke", "olives"]
 let order6 = new Order("large", ["pepperoni", "sausage", "artichoke", "olives"], 0);
 
 let order7 = new Order("large", ["pepperoni", "sausage"], 0);
+
+// UI Logic
+
+$(document).ready(function () {
+  $("form#orderForm").submit(function(event) {
+    const usernameInput = $("input#username").val();
+    const sizeInput = $("input:radio[name=size]:checked").val();
+    const toppingsInput = $("input:form-check-input[name=toppings]:checked").val();
+    $(".username").empty().append(usernameInput);
+    if (usernameInput === "" || usernameInput === null) {
+      alert ("Please enter your name")
+      return false;
+    }
+    let result = price
+    } 
+    $(".result").empty().append(result);
+    $("#output").show();
+    event.preventDefault();
+    });
+});

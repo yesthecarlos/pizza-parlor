@@ -9,6 +9,7 @@
 * HTML
 * CSS
 * JavaScript
+* jQuery
 * Markup
 
 ## Description
@@ -21,7 +22,7 @@ _This small web app lets a user choose pizza toppings and pizza size and returns
 * _Click the large green Code button at the top rightmost corner of the list of files._
 * _Click "Use GitHub CLI", then click the clipboard icon._
 * _Open Terminal and change the directory to your desired location._
-* _Type_ <code>$ git clone https://github.com/yesthecarlos/language-suggester.git</code> _and press Enter._
+* _Type_ <code>$ git clone https://github.com/yesthecarlos/pizza-parlor.git</code> _and press Enter._
 * _Open the directory in VS Code or your preferred program._
 * _Open index.html in your preferred browser._
 
@@ -39,6 +40,10 @@ Expected Output: 10
 
 * _Any known issues_
 * _should go here_
+
+## Feature Plans
+
+* _In the future, adding an order ID to the order object will make orders easier to keep track of. _
 
 ## License
 
