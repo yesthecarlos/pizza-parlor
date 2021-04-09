@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Parlor</title>
+</head>
+<body>
+<div class="container">
+  <form id="orderForm">
+    <label for="username">What's your name?</label><br>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="size">What size of pizza would you like?</label><br>
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="small" checked>
+        Small (10")
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="medium">
+        Medium (14")
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="large">
+        Large (18")
+      </label>
+    </div>
+    <br>
+    <label for="proofreader">Which toppings would you like?</label>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="pepperoniCheck1">
+      <label class="form-check-label" for="pepperoniCheck1">
+        Pepperoni
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="mushroomCheck1">
+      <label class="form-check-label" for="mushroomCheck1">
+        Mushroom
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="sausageCheck1">
+      <label class="form-check-label" for="sausageCheck1">
+        Sausage
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="olivesCheck1">
+      <label class="form-check-label" for="olivesCheck1">
+        Olives
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="pineappleCheck1">
+      <label class="form-check-label" for="pineappleCheck1">
+        Pineapple
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="artichokeCheck1">
+      <label class="form-check-label" for="artichokeCheck1">
+        Artichoke
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="redOnionCheck1">
+      <label class="form-check-label" for="redOnionCheck1">
+        Red Onion
+      </label>
+    </div>
+    <br>
+    <br>
+    <button type="submit" class="btn-primary">Order</button>
+  </form>
+</div>
+</body>
+</html>
