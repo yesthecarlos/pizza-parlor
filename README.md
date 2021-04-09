@@ -28,12 +28,12 @@ _This small web app lets a user choose pizza toppings and pizza size and returns
 ## Specs
 
 ### Describe: getPrice()
-Test: "It should return 10 if the pizza is small with 1 topping."
-Code:
-const pizzaSize = small
-const numberOfToppings = 1;
-getPrice(size, 1);
-Expected Output: 10
+Test: "It should return 10 if the pizza is small with 1 topping."  
+Code:  
+const pizzaSize = small  
+const numberOfToppings = 1;  
+getPrice(size, 1);  
+Expected Output: 10  
 
 ## Known Bugs
 

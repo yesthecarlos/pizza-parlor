@@ -21,6 +21,7 @@ Order.prototype.getPrice = function () {
     } else {
     alert("Enter something")
     }
+    return this.price
     }
 
 let order1 = new Order("small", ["pepperoni", "sausage"])
