@@ -6,6 +6,8 @@ function Order(size, toppings, cost, customerName, orderID) {
 }
 
 
-Order.prototype.cost = function () {
-  let 
+Order.prototype.getPrice = function () {
+  let pizzaSize = Order.size
+  let numberOfToppings = array.length(Order.toppings)
+    if 
 }
