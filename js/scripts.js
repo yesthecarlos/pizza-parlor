@@ -1,15 +1,15 @@
-function Order(size, toppings, price, customerName, orderID) {
+function Order(size, toppings, price) {
   this.size = size;
-  this.toppings = [];
-  this.price;
-  this.customerName;
-  this.orderID;
+  this.toppings = toppings;
+  this.price = price;
+  // this.customerName;
+  // this.orderID;
 }
 
 
 Order.prototype.getPrice = function () {
-  let pizzaSize = this.Order.size
-  let numberOfToppings = array.length(this.Order.toppings)
+  const pizzaSize = this.size
+  const numberOfToppings = this.toppings.length - 1
     if (pizzaSize === "small" && numberOfToppings === 1) {
       this.price = 10
     } else if (pizzaSize === "small" && numberOfToppings === 2) {
@@ -24,5 +24,5 @@ Order.prototype.getPrice = function () {
     return this.price
     }
 
-let order1 = new Order("small", ["pepperoni", "sausage"])
+let order1 = new Order("small",["pepperoni", "sausage"],0);
     
