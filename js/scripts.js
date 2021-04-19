@@ -35,41 +35,40 @@ Order.prototype.getPrice = function () {
     } else if (pizzaSize === "large" && numberOfToppings > 3) {
       alert("3 is the maximum number of toppings")
     } else {
-    alert("Enter something")
+      alert("Enter something")
     }
-    return this.price
-    }
-
-let order1 = new Order("small",["pepperoni", "sausage"],0);
-    
-let order2 = new Order("small", ["pepperoni"], 0);
-
-let order3 = new Order("small", ["pepperoni", "sausage", "artichoke", "olives"], 0);
-
-let order4 = new Order("medium", ["pepperoni", "sausage"], 0);
-
-let order5 = new Order("medium", ["pepperoni", "sausage", "artichoke", "olives"], 0);
-
-let order6 = new Order("large", ["pepperoni", "sausage", "artichoke", "olives"], 0);
-
-let order7 = new Order("large", ["pepperoni", "sausage"], 0);
+    return this.price;
+}
 
 // UI Logic
-
 $(document).ready(function () {
   $("form#orderForm").submit(function(event) {
+    event.preventDefault();
     const usernameInput = $("input#username").val();
     const sizeInput = $("input:radio[name=size]:checked").val();
-    const toppingsInput = $("input:form-check-input[name=toppings]:checked").val();
+    const toppingsInput = [];
+    const form = document.getElementById('orderForm');
+
+    form.querySelectorAll('input').forEach(function (input) {
+      if(input.type === 'checkbox' && input.checked) {
+        toppingsInput.push(input.value);
+      }
+    });
+    // $.each($("input[name='toppings']:checked"), function(){
+    //   toppingsInput.push($(this).val());
+    
+  
+    // const toppingsInput = $("input:form-check-input[name=toppings]:checked").val();
     $(".username").empty().append(usernameInput);
     if (usernameInput === "" || usernameInput === null) {
       alert ("Please enter your name")
       return false;
     }
-    let result = price
-    } 
-    $(".result").empty().append(result);
+    let newOrder = new Order(sizeInput, toppingsInput);
+    console.log(newOrder);
+    let result = newOrder.getPrice();
+    $(".result").empty().append("$" + result);
     $("#output").show();
-    event.preventDefault();
+    
     });
 });
