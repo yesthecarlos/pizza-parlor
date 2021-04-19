@@ -43,7 +43,7 @@ Expected Output: 10
 
 ## Feature Plans
 
-* _In the future, adding an order ID to the order object will make orders easier to keep track of. _
+* _In the future, adding an order ID to the order object will make orders easier to keep track of._
 
 ## License
 
