@@ -3,8 +3,6 @@ function Order(size, toppings, price) {
   this.size = size;
   this.toppings = toppings;
   this.price = price;
-  // this.customerName;
-  // this.orderID;
 }
 
 Order.prototype.getPrice = function () {
@@ -54,11 +52,6 @@ $(document).ready(function () {
         toppingsInput.push(input.value);
       }
     });
-    // $.each($("input[name='toppings']:checked"), function(){
-    //   toppingsInput.push($(this).val());
-    
-  
-    // const toppingsInput = $("input:form-check-input[name=toppings]:checked").val();
     $(".username").empty().append(usernameInput);
     if (usernameInput === "" || usernameInput === null) {
       alert ("Please enter your name")
